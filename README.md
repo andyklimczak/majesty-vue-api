@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple API to be used with The Majesty of Vuejs2 book to be used locally or with heroku
 
-Things you may want to cover:
+Contains endpoints for `/stories` and `/movies`. Does not have pagination part yet.
 
-* Ruby version
+Local development mode uses sqlite
 
-* System dependencies
+### Endpoints
 
-* Configuration
+GET stories
 
-* Database creation
+`/stories`
 
-* Database initialization
+`https://radiant-tundra-67877.herokuapp.com/stories`
 
-* How to run the test suite
+PATCH stories/:id
 
-* Services (job queues, cache servers, search engines, etc.)
+`/stories/:id.json`
 
-* Deployment instructions
+`https://radiant-tundra-67877.herokuapp.com/stories/:id`
 
-* ...
+DELETE stories/:id
+
+`/stories/:id`
+
+`https://radiant-tundra-67877.herokuapp.com/stories/:id`
+
+### Local Setup
+
+0. have a Rails 5 compatible ruby installed. (>2.0?) Recommend installing through `rvm` or fish shell `fry`
+1. `gem install bundler`
+2. git clone repo, cd in
+3. `bundle install` to install dependencies
+4. `rails db:migrate` to create database tables
+5. `rails db:seed` to seed data into database
+6. `rails server` to start server
+7. check `localhost:3000/stories.json`. Note that this url is slightly different from the book
+
