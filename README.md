@@ -8,13 +8,21 @@ Local development mode uses sqlite
 
 ### Endpoints
 
+#### Stories
+
 GET stories
 
 `/stories`
 
 `https://powerful-hollows-81664.herokuapp.com/stories`
 
-PATCH stories/:id
+GET story
+
+`/stories/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/stories/:id`
+
+PUT/PATCH stories/:id
 
 `/stories/:id`
 
@@ -26,6 +34,32 @@ DELETE stories/:id
 
 `https://powerful-hollows-81664.herokuapp.com/stories/:id`
 
+#### Movies
+
+GET movies
+
+`/movies`
+
+`https://powerful-hollows-81664.herokuapp.com/movies`
+
+GET story
+
+`/movies/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/movies/:id`
+
+PUT/PATCH movies/:id
+
+`/movies/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/movies/:id`
+
+DELETE movies/:id
+
+`/movies/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/movies/:id`
+
 ### Local Setup
 
 0. have a Rails 5 compatible ruby installed. (>2.0?) Recommend installing through `rvm` or fish shell `fry`
@@ -35,5 +69,5 @@ DELETE stories/:id
 4. `rails db:migrate` to create database tables
 5. `rails db:seed` to seed data into database
 6. `rails server` to start server
-7. check `localhost:3000/stories.json`. Note that this url is slightly different from the book
+7. check `localhost:3000/stories`. Note that this url is slightly different from the book
 
