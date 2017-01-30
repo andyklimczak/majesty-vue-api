@@ -12,19 +12,19 @@ GET stories
 
 `/stories`
 
-`https://radiant-tundra-67877.herokuapp.com/stories`
+`https://powerful-hollows-81664.herokuapp.com/stories`
 
 PATCH stories/:id
 
-`/stories/:id.json`
+`/stories/:id`
 
-`https://radiant-tundra-67877.herokuapp.com/stories/:id`
+`https://powerful-hollows-81664.herokuapp.com/stories/:id`
 
 DELETE stories/:id
 
 `/stories/:id`
 
-`https://radiant-tundra-67877.herokuapp.com/stories/:id`
+`https://powerful-hollows-81664.herokuapp.com/stories/:id`
 
 ### Local Setup
 
