@@ -14,25 +14,25 @@ GET stories
 
 `/stories`
 
-`https://powerful-hollows-81664.herokuapp.com/stories`
+`https://powerful-hollows-81664.herokuapp.com/api/stories`
 
 GET story
 
 `/stories/:id`
 
-`https://powerful-hollows-81664.herokuapp.com/stories/:id`
+`https://powerful-hollows-81664.herokuapp.com/api/stories/:id`
 
 PUT/PATCH stories/:id
 
 `/stories/:id`
 
-`https://powerful-hollows-81664.herokuapp.com/stories/:id`
+`https://powerful-hollows-81664.herokuapp.com/api/stories/:id`
 
 DELETE stories/:id
 
 `/stories/:id`
 
-`https://powerful-hollows-81664.herokuapp.com/stories/:id`
+`https://powerful-hollows-81664.herokuapp.com/api/stories/:id`
 
 #### Movies
 
@@ -40,25 +40,25 @@ GET movies
 
 `/movies`
 
-`https://powerful-hollows-81664.herokuapp.com/movies`
+`https://powerful-hollows-81664.herokuapp.com/api/movies`
 
 GET story
 
 `/movies/:id`
 
-`https://powerful-hollows-81664.herokuapp.com/movies/:id`
+`https://powerful-hollows-81664.herokuapp.com/api/movies/:id`
 
 PUT/PATCH movies/:id
 
 `/movies/:id`
 
-`https://powerful-hollows-81664.herokuapp.com/movies/:id`
+`https://powerful-hollows-81664.herokuapp.com/api/movies/:id`
 
 DELETE movies/:id
 
 `/movies/:id`
 
-`https://powerful-hollows-81664.herokuapp.com/movies/:id`
+`https://powerful-hollows-81664.herokuapp.com/api/movies/:id`
 
 ### Local Setup
 
@@ -69,5 +69,5 @@ DELETE movies/:id
 4. `rails db:migrate` to create database tables
 5. `rails db:seed` to seed data into database
 6. `rails server` to start server
-7. check `localhost:3000/stories`. Note that this url is slightly different from the book
+7. check `localhost:3000/api/stories`. Note that this url is slightly different from the book
 
