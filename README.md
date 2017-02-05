@@ -12,25 +12,25 @@ Local development mode uses sqlite
 
 GET stories
 
-`/stories`
+`/api/stories`
 
 `https://powerful-hollows-81664.herokuapp.com/api/stories`
 
 GET story
 
-`/stories/:id`
+`/api/stories/:id`
 
 `https://powerful-hollows-81664.herokuapp.com/api/stories/:id`
 
 PUT/PATCH stories/:id
 
-`/stories/:id`
+`/api/tories/:id`
 
 `https://powerful-hollows-81664.herokuapp.com/api/stories/:id`
 
 DELETE stories/:id
 
-`/stories/:id`
+`/api/stories/:id`
 
 `https://powerful-hollows-81664.herokuapp.com/api/stories/:id`
 
@@ -38,27 +38,57 @@ DELETE stories/:id
 
 GET movies
 
-`/movies`
+`/api/movies`
 
 `https://powerful-hollows-81664.herokuapp.com/api/movies`
 
 GET story
 
-`/movies/:id`
+`/api/movies/:id`
 
 `https://powerful-hollows-81664.herokuapp.com/api/movies/:id`
 
 PUT/PATCH movies/:id
 
-`/movies/:id`
+`/api/movies/:id`
 
 `https://powerful-hollows-81664.herokuapp.com/api/movies/:id`
 
 DELETE movies/:id
 
-`/movies/:id`
+`/api/movies/:id`
 
 `https://powerful-hollows-81664.herokuapp.com/api/movies/:id`
+
+#### Pagination Stories
+
+The api is done slightly different from how the book will describe it. The book example server gives the pagination info in the json response, while this server follows the `Paginatin RFC-5988` standard where the pagination info is given in headers instead. Inspect the headers on a GET request, and you will see `Per-Page`, `Total`, and `Link`.
+
+If you think of a better way to emulate the example server, please submit a PR.
+
+GET pagination_stories
+
+`/api/pagination_stories`
+
+`https://powerful-hollows-81664.herokuapp.com/api/pagination_stories`
+
+GET story
+
+`/api/pagination_stories/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/api/pagination_stories/:id`
+
+PUT/PATCH pagination_stories/:id
+
+`/api/pagination_stories/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/api/pagination_stories/:id`
+
+DELETE pagination_stories/:id
+
+`/api/pagination_stories/:id`
+
+`https://powerful-hollows-81664.herokuapp.com/api/pagination_stories/:id`
 
 ### Local Setup
 

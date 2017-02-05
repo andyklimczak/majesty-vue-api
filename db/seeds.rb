@@ -22,3 +22,10 @@ JSON.parse(open("#{Rails.root}/db/seed/movies.json").read).each_with_index do |d
   movie.save!
 end
 
+PaginationStory.delete_all
+JSON.parse(open("#{Rails.root}/db/seed/pagination_stories.json").read).each_with_index do |data, index|
+  story = PaginationStory.new(data)
+  story.upvotes = Random.rand(499)
+  story.id = index + 1
+  story.save!
+end
